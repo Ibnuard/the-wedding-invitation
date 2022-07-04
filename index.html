@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon-aa.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="The Wedding of Anisa &amp; Angga" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/clipboard.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <title>Anisa &amp; Angga Wedding</title>
+    <meta name="description" content="Minggu, 20 Februari 2022" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Wedding of Anisa &amp; Angga" />
+    <meta property="og:description" content="Minggu, 20 Februari 2022" />
+    <meta property="og:url" content="https://anisa-angga.netlify.app/" />
+    <meta property="og:site_name" content="AnisaAngga" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/nandayonah/wedding/master/og_anisa_angga.jpg"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1539" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script defer="defer" src="/static/js/main.e21a1047.js"></script>
+    <link href="/static/css/main.4e85472b.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="navigationWrapper" class="navigation-wrapper">
+      <div class="navigation">
+        <a class="navigation-item" href="#mainContent"
+          ><span class="material-icons">home </span>Home</a
+        >
+        <a class="navigation-item" href="#sectionAbout"
+          ><span class="material-icons">people_alt </span>Mempelai</a
+        >
+        <a class="navigation-item" href="#agendas"
+          ><span class="material-icons">event </span>Acara</a
+        >
+        <a class="navigation-item" href="#gallery"
+          ><span class="material-icons">collections </span>Galeri</a
+        >
+        <a class="navigation-item" href="#message"
+          ><span class="material-icons">chat_bubble </span>Ucapan</a
+        >
+      </div>
+    </div>
+    <section id="introContent" class="section-opening box1 d-flex center">
+      <div class="image-primary"><img src="img/G-1.jpg" /></div>
+      <div class="text-primary center-text">
+        <div class="hero-content">
+          <h1>Anisa & Angga</h1>
+          <p>Kepada Bapak/Ibu/Saudara/i</p>
+          <div><h2 id="myTitle"></h2></div>
+          <p>Kita Mengundang Anda Untuk Hadir Di Acara Pernikahan Kita.</p>
+        </div>
+        <div class="hero-footer">
+          <button class="button" id="buka">
+            <span class="material-icons">auto_stories</span>Buka Undangan
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="mainContent" class="box2">
+      <section class="section-hero d-flex center">
+        <div>
+          <div class="heading-primary container center-text">
+            <h1>Anisa & Angga</h1>
+            <p class="center-text heading-tertiary">
+              We invited you to celebrate our wedding
+            </p>
+            <p class="center-text heading-tertiary">Minggu, 20 Februari 2022</p>
+          </div>
+          <div>
+            <ul class="countdown-timer">
+              <li>
+                <div class="blurry"></div>
+                <span id="days" class="countdown-number">hari</span>hari
+              </li>
+              <li>
+                <div class="blurry"></div>
+                <span class="countdown-number" id="hours">jam</span>jam
+              </li>
+              <li>
+                <div class="blurry"></div>
+                <span id="minutes" class="countdown-number">menit</span>menit
+              </li>
+              <li>
+                <div class="blurry"></div>
+                <span id="seconds">detik</span>detik
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="sectionAbout">
+        <div class="heading-primary center-text">
+          <h1 id="sectionAbout">PASANGAN MEMPELAI</h1>
+          <p class="pass">Assalamualaikum Wr. Wb.</p>
+          <p class="pterimakasih">
+            Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+            serta kerabat sekalian untuk menghadiri acara pernikahan kami:
+          </p>
+        </div>
+        <div class="about-relationship container-about grid grid--2-cols">
+          <div class="about-partner">
+            <img src="img/pman2.jpg" alt="husband photo" />
+            <h2>Anggarapindo Hardjunanto, S.Ak.</h2>
+            <h3>Putra Kedua</h3>
+            <p>Bapak Wagimin, S.H. & Ibu Umi Khasanah (almh)</p>
+          </div>
+          <div class="about-partner mt">
+            <img src="img/pwoman2.jpg" alt="wife photo" />
+            <h2>Anisa Kencana, S.E.</h2>
+            <h3>Putri Pertama</h3>
+            <p>Bapak Ciknani, S.Ag. & Ibu Meri Hartati, S.Pd.</p>
+          </div>
+        </div>
+      </section>
+      <section id="agendas" class="section-event">
+        <div class="heading-primary center-text">
+          <p>Our Special</p>
+          <h1>WEDDING EVENT</h1>
+        </div>
+        <div class="event grid grid--2-cols">
+          <div class="event-special-container">
+            <div class="event-special">
+              <h2>Akad Nikah</h2>
+              <div class="event-schedule grid">
+                <div class="event-date">
+                  <div class="d-flex">
+                    <span class="material-icons">event</span>
+                    <div class="event-content">
+                      <p>Minggu, 20 Februari 2022</p>
+                      <p>08.00 WIB s/d selesai</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <span class="material-icons">map</span>
+                    <p class="event-content">Masjid Raya Baitul Izzah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-special-container">
+            <div class="event-special event-special-mt">
+              <h2>Resepsi</h2>
+              <div class="event-schedule grid">
+                <div class="event-date">
+                  <div class="d-flex">
+                    <span class="material-icons">event</span>
+                    <div class="event-content">
+                      <p>Minggu, 20 Februari 2022</p>
+                      <p>10.30 WIB s/d selesai</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <span class="material-icons">map</span>
+                    <p class="event-content">Gedung Balai Prajurit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex center">
+          <a
+            class="button button-outline"
+            href="https://www.google.com/maps/place/Balai+Prajurit+Garuda+Emas/@-3.8208365,102.2839824,17z/data=!4m12!1m6!3m5!1s0x0:0x5d7a92fe768b62fc!2sBalai+Prajurit+Garuda+Emas!8m2!3d-3.8207883!4d102.2854737!3m4!1s0x0:0x5d7a92fe768b62fc!8m2!3d-3.8207883!4d102.2854737"
+            target="_blank"
+            >Lihat Lokasi</a
+          >
+        </div>
+      </section>
+      <section class="section-timeline">
+        <h1 class="htimeline">Perjalanan Cerita Kami</h1>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="main-timeline">
+                <div class="timeline">
+                  <div class="timeline-content">
+                    <div class="circle">
+                      <span class="homebox"
+                        ><img src="img/G-4.jpg" class="img"
+                      /></span>
+                    </div>
+                    <div class="content">
+                      <span class="year">Awal Cerita</span>
+                      <p class="description">
+                        Berawal dari seminar yang dilaksanakan kampus pada tahun
+                        2015, kita bertemu dan merasa ada kecocokan satu sama
+                        lain, akhirnya kita menjalin hubungan hingga saat ini
+                        dan berkomitmen untuk melangkah ke jenjang pernikahan.
+                      </p>
+                      <div class="icon"><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-content">
+                    <div class="circle">
+                      <span class="homebox"
+                        ><img src="img/G-1.jpg" class="img"
+                      /></span>
+                    </div>
+                    <div class="content">
+                      <span class="year">Acara Lamaran</span>
+                      <p class="description">
+                        Selama 6 Tahun menjalani hubungan dan saling mengenal
+                        satu sama lain Akhirnya pada bulan oktober kedua belah
+                        pihak beserta keluarga melakukan silahturahmi via zoom
+                        dan memutuskan lamaran pada tanggal 18 Februari 2022.
+                      </p>
+                      <div class="icon"><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-content">
+                    <div class="circle">
+                      <span class="homebox"
+                        ><img src="img/G-8.jpg" class="img"
+                      /></span>
+                    </div>
+                    <div class="content">
+                      <span class="year">Pernikahan</span>
+                      <p class="description">
+                        Tanggal 20 Februari 2022 merupakan tanggal spesial bagi
+                        kami, Insya Allah kami akan melangsungkan pernikahan
+                        mohon doa restunya semoga acara berlangsung sukses &
+                        lancar tanpa ada halangan dan rintangan. Aamiin
+                      </p>
+                      <div class="icon"><span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="section-gallery">
+        <h1 class="center-text">WE LOVE EACH TOGETHER</h1>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+      </section>
+      <section class="section-thank-you container" id="mthankyou">
+        <div class="thank-you">
+          <img src="img/thank-you.jpg" alt="photo thank you" />
+        </div>
+        <div class="thank-you">
+          <p>
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami. apabila
+            bapak/ibu/saudara(i) berkenan hadir untuk memberikan do'a restu
+            kepada kedua mempelai, Atas kehadiran dan doa restu nya kami ucapkan
+            terimakasih
+          </p>
+          <p class="thank-you-wasallam">
+            Wassalamualaikum warahmatullahi wabarakatuh
+          </p>
+        </div>
+      </section>
+      <section class="section-transfer">
+        <div class="transfer container">
+          <h1>Amplop Digital</h1>
+          <p>
+            Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan
+            jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi
+            kado secara cashless
+          </p>
+        </div>
+        <div class="transfer-no d-flex">
+          <div><img src="img/bni-logo.png" alt="bni logo" /></div>
+          <div class="container-transfer">
+            <div class="label">No Rekening:</div>
+            <div class="copy-text">
+              <input readonly="readonly" class="text" value="0835 6744 82" />
+              <button>Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="transfer-hadiah">
+          <h4>Kirim Hadiah</h4>
+          <p>
+            Sukoyoso RT 01 RW 01 Kel. kramatan Kec. Wonosobo Jawa Tengah
+            (sebelah masjid mardotila)
+          </p>
+        </div>
+      </section>
+      <section id="message" class="section-form">
+        <div class="form">
+          <h1>Ucapkan Sesuatu</h1>
+          <p>Berikan Ucapan & Doa Restu</p>
+          <div class="formbg-outer">
+            <div class="formbg">
+              <form id="formMessage">
+                <div class="field">
+                  <input
+                    id="inputName"
+                    readonly="readonly"
+                    type="name"
+                    name="name"
+                    placeholder="Nama"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    id="inputMessage"
+                    cols="77"
+                    rows="5"
+                    placeholder="Berikan Ucapan Dan Doa restu"
+                  ></textarea>
+                </div>
+                <div class="field">
+                  <select name="" id="inputPresence">
+                    <option value="" disabled="disabled">
+                      Konfirmasi Kehadiran
+                    </option>
+                    <option value="1">Hadir</option>
+                    <option value="2">InsyaAllah</option>
+                    <option value="3">Tidak Hadir</option>
+                  </select>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input
+                    class="button button-outline"
+                    id="buttonSubmit"
+                    type="submit"
+                    name="submit"
+                    value="Kirimkan Ucapan"
+                  />
+                  <div id="errorMessage"></div>
+                </div>
+                <div
+                  id="commentsContainer"
+                  class="field padding-bottom--24"
+                ></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-protokol-kesehatan container">
+        <h1 class="center-text">PROTOKOL KESEHATAN</h1>
+        <p>
+          Guna mencegah penyebaran Covid-19, diharapkan bagi tamu undangan untuk
+          mematuhi Protokol Kesehatan di bawah ini :
+        </p>
+        <ul class="protocols">
+          <li><span class="material-icons">clean_hands </span>Cuci Tangan</li>
+          <li>
+            <span class="material-icons">sanitizer </span>Gunakan Hand Sanitizer
+          </li>
+          <li><span class="material-icons">masks </span>Gunakan Masker</li>
+          <li>
+            <span class="material-icons">social_distance </span>Jaga Jarak
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer id="footer">
+      <p>
+        In project collaboration of
+        <a href="https://www.instagram.com/iqbaliop23" _target="blank"
+          >@iqbaliop23</a
+        >
+        and
+        <a href="https://www.instagram.com/fadliblight" _target="blank"
+          >@fadliblight</a
+        >
+      </p>
+    </footer>
+    <audio id="mySong"><source src="music/zack.mp3" type="audio/mp3" /></audio>
+    <script>
+      var mySong = document.getElementById("mySong"),
+        myButton = document.getElementById("buka");
+      myButton.onclick = function () {
+        mySong.paused ? mySong.play() : mySong.pause();
+      };
+    </script>
+    <script src="script.js"></script>
+    <script src="clipboard.js"></script>
+    <script src="supabase.js"></script>
+  </body>
+</html>
